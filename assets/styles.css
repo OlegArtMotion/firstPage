@@ -8,6 +8,7 @@
   --bg-hover-color1: #ff4fb9;
   --bg-hover-color2: #03d047;
   --bg-hover-color3: #52CAFF;
+  --box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5);
 
 }
 /* body {
@@ -20,14 +21,19 @@
 
 .picsElements img {
   border: 4px solid var(--white);
-  box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--box-shadow);
   border-radius: 50%;
   margin: 10px;
 
   width: 130px;
   height: auto;
+  transition: width 0.3s ease, height 0.5s ease;
 }
 
+.picsElements img:hover {
+  width: 160px;
+  height: auto;
+}
 p {
   text-align: center;
   margin: 25px 30px 50px 30px;
